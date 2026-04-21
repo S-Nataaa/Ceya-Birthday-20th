@@ -375,6 +375,30 @@ h2 {
         height: 180px !important;
         margin: 0 auto;
     }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Kunci biar judul & kalender di tengah */
+        width: 100%;
+    }
+
+    .cute-calendar {
+        width: 95% !important; 
+        max-width: 320px;
+        margin: 20px auto !important; /* Margin auto biar dia simetris tengah */
+        padding: 15px !important;
+        transform: rotate(-2deg) scale(0.9) !important; /* Scale 0.9 biar nggak terlalu sesek di layar HP */
+    }
+
+    .cal-grid-cute {
+        gap: 4px !important; /* Jarak antar angka di HP diperkecil */
+    }
+
+    .cal-day-cute.highlighted::after {
+        right: -15px !important; /* Geser icon hati biar nggak "offside" keluar layar */
+        top: -8px !important;
+        font-size: 18px !important;
+    }
 }
     
 
