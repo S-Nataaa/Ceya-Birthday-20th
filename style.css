@@ -378,24 +378,24 @@ h2 {
     .container {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Kunci biar judul & kalender di tengah */
+        align-items: center; 
         width: 100%;
     }
 
     .cute-calendar {
         width: 95% !important; 
         max-width: 320px;
-        margin: 20px auto !important; /* Margin auto biar dia simetris tengah */
+        margin: 20px auto !important; 
         padding: 15px !important;
-        transform: rotate(-2deg) scale(0.9) !important; /* Scale 0.9 biar nggak terlalu sesek di layar HP */
+        transform: rotate(-2deg) scale(0.9) !important; 
     }
 
     .cal-grid-cute {
-        gap: 4px !important; /* Jarak antar angka di HP diperkecil */
+        gap: 4px !important; 
     }
 
     .cal-day-cute.highlighted::after {
-        right: -15px !important; /* Geser icon hati biar nggak "offside" keluar layar */
+        right: -15px !important; 
         top: -8px !important;
         font-size: 18px !important;
     }
