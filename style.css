@@ -351,13 +351,29 @@ h2 {
 }
 
 @media (max-width: 600px) {
+    .memories-wrapper {
+        flex-direction: column;
+    }
+    .pol-item {
+        width: 80%;
+        max-width: 250px;
+    }
     .card-back p {
         font-size: 0.85rem !important;
         line-height: 1.4;
     }
-    .pol-item {
-        margin: 10px auto !important; 
-        transform: rotate(0deg) !important; 
+
+    .cards-grid {
+        gap: 10px !important;
+        padding: 0 10px !important;
+        justify-items: center; 
+    }
+
+    .card-container {
+        width: 100% !important; 
+        max-width: 160px; 
+        height: 180px !important;
+        margin: 0 auto;
     }
 }
     
