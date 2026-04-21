@@ -371,17 +371,20 @@ h2 {
     background-color: #fef4ec; 
     border-radius: 12px;
     padding: 20px;
-    max-width: 90%;
+    width: 90% !important; 
+    max-width: 320px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.4);
     color: #1a202c; 
     font-family: 'Poppins', sans-serif;
     position: relative;
+    box-sizing: border-box;
     z-index: 5;
     transform: rotate(-2deg);
     order: 0; 
     margin: 0 auto !important;
     z-index: 5; 
     display: table;
+    overflow: hidden;
 }
 
 .cal-header-cute {
@@ -418,7 +421,7 @@ h2 {
 
 .cal-weekdays-cute {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(7, 1fr) !important;
     background-color: #ff9eb5; 
     padding: 5px 0;
     margin-bottom: 10px;
@@ -427,12 +430,15 @@ h2 {
     font-size: 0.8rem;
     color: #1a202c;
     border-radius: 4px;
+    display: grid !important;
+    width: 100%;
 }
 
 .cal-grid-cute {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    display: grid !important;
+    grid-template-columns: repeat(7, 1fr) !important;
     gap: 6px;
+    width: 100%;
 }
 
 .cal-day-cute {
@@ -446,6 +452,9 @@ h2 {
     color: #1a202c;
     border-radius: 4px;
     position: relative;
+    width: 100% !important;
+    height: auto !important;
+    padding: 0;
 }
 
 .cal-day-cute.empty {
