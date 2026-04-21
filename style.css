@@ -29,6 +29,7 @@ body {
     overflow-x: hidden;
     min-height: 100vh;
     position: relative;
+    width: 100%;
 }
 
 body::before {
@@ -297,14 +298,12 @@ h2 {
 }
 
 .memories-wrapper {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
     gap: 20px;
-    margin: 40px auto;
-    max-width: 800px;
+    width: 100%;
+    margin: 0 auto; 
 }
 
 .pol-item {
@@ -352,14 +351,12 @@ h2 {
 }
 
 @media (max-width: 600px) {
-    .memories-wrapper {
-        flex-direction: column;
     }
     .pol-item {
-        width: 80%; 
-        max-width: 250px; 
+        margin: 10px auto !important; 
+        transform: rotate(0deg) !important; 
     }
-}
+
 
 .glass-panel {
     background: var(--glass-bg);
@@ -374,7 +371,7 @@ h2 {
     background-color: #fef4ec; 
     border-radius: 12px;
     padding: 20px;
-    width: 320px;
+    max-width: 90%;
     box-shadow: 0 15px 35px rgba(0,0,0,0.4);
     color: #1a202c; 
     font-family: 'Poppins', sans-serif;
@@ -382,8 +379,9 @@ h2 {
     z-index: 5;
     transform: rotate(-2deg);
     order: 0; 
-    margin: 20px;
+    margin: 0 auto !important;
     z-index: 5; 
+    display: table;
 }
 
 .cal-header-cute {
@@ -573,13 +571,14 @@ h2 {
 }
 
 .page-section { 
-    min-height: 100vh; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center; 
-    padding-top: 10px;
-    padding-bottom: 50px;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; 
+    overflow: hidden; 
 }
 
 .reveal { 
@@ -666,7 +665,6 @@ h2 {
     letter-spacing: 1px;
 }
 
-/* --- FLIP CARDS STYLE --- */
 .reasons-section {
     margin: 60px auto;
     padding: 0 10px;
